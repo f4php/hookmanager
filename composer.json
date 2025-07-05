@@ -1,6 +1,6 @@
 {
     "name": "f4php/hookmanager",
-    "description": "HookManager is internal hook management SDK for F4, a lightweight web application framework",
+    "description": "HookManager is internal hooks core package for F4, a lightweight web development framework",
     "keywords": ["f4","framework","hook manager"],
     "license": "MIT",
     "autoload": {

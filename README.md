@@ -1,6 +1,6 @@
 # Overview
 
-HookManager is a hooks management SDK for [F4](https://github.com/f4php/f4), a lightweight web development framework.
+HookManager is an internal hooks core package for [F4](https://github.com/f4php/f4), a lightweight web development framework.
 
 It is primarily used by F4 for collecting performance information to be displayed in debug mode.
 
