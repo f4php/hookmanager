@@ -12,8 +12,12 @@ HookManager uses a very simple API to register and invoke app-wide event handler
 /*
  * The first step is to register a hook handler for an arbitrary hook name.
  * 
- * HookManager includes a set of hook names defined as constants looking like
- * HookManager::BEFORE_* and HookManager::AFTER_*, which are used by F4 internally.
+ * HookManager includes a set of hook names defined as constants looking like this:
+ * 
+ *  HookManager::BEFORE_*
+ *  HookManager::AFTER_*
+ * 
+ * which are used by F4 internally.
  */
 HookManager::addHook('hook name', function (array $context): bool {
     // do something useful
@@ -25,9 +29,8 @@ HookManager::addHook('hook name', function (array $context): bool {
 /*
  * Once registered, hooks may be invoked (triggered) anywhere in the code.
  * 
- * This call will return an array composed of return values
- * produced by all registered handlers if present, or an empty
- * array otherwise.
+ * This call will always return an array containing return values
+ * from all registered handlers. If no handlers were registered, it will return an empty array.
  */
 HookManager::triggerHook('hook name', ['context' => null]); // returns: [ 0 => true ]
 ```
