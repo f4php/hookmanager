@@ -41,6 +41,8 @@ class HookManager
     public const string AFTER_TEMPLATE_CONTEXT_READY = 'AFTER_TEMPLATE_CONTEXT_READY';
     public const string BEFORE_SQL_SUBMIT = 'BEFORE_SQL_SUBMIT';
     public const string AFTER_SQL_SUBMIT = 'AFTER_SQL_SUBMIT';
+    public const string BEFORE_DB_CONNECT = 'BEFORE_DB_CONNECT';
+    public const string AFTER_DB_CONNECT = 'AFTER_DB_CONNECT';
 
     protected static array $hooks = [];
     protected static array $baseContext = [];

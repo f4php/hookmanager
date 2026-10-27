@@ -27,7 +27,7 @@
     },
     "scripts": {
         "test": "phpunit --display-warnings --display-phpunit-deprecations --fail-on-deprecation tests",
-        "phpstan": "phpstan --level=1 analyse src tests"
+        "stan": "phpstan --level=1 analyse src tests"
     },
     "require": {
         "php": "^8.4.27"
